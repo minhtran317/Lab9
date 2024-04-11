@@ -8,12 +8,12 @@ def encode(unencoded_string: str):
     return encoded_string
 
 
-"""def decode(encoded_string: str):
-    encoded_string = str(encoded_string)
-    unencoded_string = ""
-    for index in range(len(encoded_string)):
-        unencoded_string += str(int(encoded_string[index]) - 3)
-    return unencoded_string"""
+def decode(encoded_password):
+    decoded_password = ""
+    for digit in encoded_password:
+        decoded_digit = str((int(digit) - 3) % 10)
+        decoded_password += decoded_digit
+    return decoded_password
 
 
 def main():
@@ -23,8 +23,8 @@ def main():
 
         if option == "1":
             print(f"your encoded password is: {encode(input("enter a password to decode "))}")
-        #if option == "2":
-        #    print(f"your decoded password is: {decode(input("enter a password to decode "))}")
+        if option == "2":
+            print(f"your decoded password is: {decode(input("enter a password to decode "))}")
 
     print("bye")
 
