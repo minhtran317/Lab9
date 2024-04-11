@@ -1,3 +1,5 @@
+#  minh tran
+
 def password_encoder(unencoded_string: str):
     unencoded_string = str(unencoded_string)
     encoded_string: str = ""
