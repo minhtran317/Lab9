@@ -23,8 +23,8 @@ def main():
 
         if option == "1":
             print(f"your encoded password is: {encode(input("enter a password to decode "))}")
-        if option == "2":
-            print(f"your decoded password is: {decode(input("enter a password to decode "))}")
+        #if option == "2":
+        #    print(f"your decoded password is: {decode(input("enter a password to decode "))}")
 
     print("bye")
 
